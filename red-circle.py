@@ -1,3 +1,4 @@
+#Bahadır Bolat
 import cv2
 import numpy as np
 import time
@@ -12,7 +13,7 @@ dispW=640
 dispH=480
 flip=2
 
-#Uncomment These next Two Line for Camera
+#Kamera
 camSet='nvarguscamerasrc !  video/x-raw(memory:NVMM), width=640 , height=480 , format=(string)NV12, framerate=20/1 ! nvvidconv flip-method='+str(flip)+' ! video/x-raw, width='+str(dispW)+', height='+str(dispH)+', format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink'
 cap= cv2.VideoCapture(camSet)
 
